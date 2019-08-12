@@ -7,10 +7,58 @@
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <style>
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+            }
 
+            .top {
+                overflow: auto;
+            }
+
+            .bottom {
+                flex: 0 0 200px;
+            }
+
+            /* Misc */
+            body,
+            ol {
+                margin: 0;
+            }
+
+            .top {
+                background: cyan;
+            }
+
+            .bottom {
+                background: yellow;
+            }
         </style>
     </head>
     <body>
-        <blockquote>See <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=927066">Issue 927066: Flexbox rendering changed between chrome 71 and 72</a></blockquote>
+        <!-- See <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=927066">Issue 927066: Flexbox rendering changed between chrome 71 and 72</a> -->
+        <div class="wrapper">
+            <div class="top">
+                <ol>
+                    <li>Voluptate irure et ullamco magna quis et aliquip est consectetur eu amet enim consectetur irure ex anim aliquip eu proident nostrud tempor anim officia magna aliqua cupidatat amet qui nulla duis.</li>
+                    <li>Consectetur in esse ex pariatur exercitation eu in irure ut incididunt cupidatat irure ea incididunt consectetur labore in et deserunt aute elit ut quis proident laborum laborum enim amet dolor nulla aliqua excepteur enim.</li>
+                    <li>Enim dolore commodo anim eiusmod reprehenderit voluptate irure nulla non ad quis eiusmod cupidatat proident sit ullamco eiusmod reprehenderit proident fugiat quis ut velit velit ullamco cillum in irure cillum sed in sunt eiusmod aute dolor eiusmod consequat.</li>
+                    <li>Reprehenderit mollit ut eu proident duis deserunt ullamco sunt reprehenderit exercitation in officia quis sed ullamco duis sed excepteur nostrud ad sit do duis anim deserunt qui labore officia anim quis in commodo voluptate ut amet nostrud velit commodo.</li>
+                    <li>Dolore ex exercitation tempor eu laborum ut voluptate et officia elit laborum cillum magna ea voluptate proident in officia culpa id.</li>
+                    <li>Ex dolor sed in velit voluptate irure et ullamco aliquip ullamco dolore consequat magna tempor adipisicing sit commodo magna nulla.</li>
+                    <li>Eu culpa enim in ad id dolore cupidatat eu irure mollit aliqua cupidatat nisi pariatur sed aliquip amet irure sit est dolore laborum est deserunt incididunt quis dolor incididunt esse quis ea minim laboris.</li>
+                    <li>Sint quis tempor ex incididunt dolore exercitation esse pariatur proident in commodo mollit labore nulla cillum sit dolor voluptate proident incididunt non ut ullamco exercitation ut sed et commodo enim est.</li>
+                    <li>Do ullamco sint fugiat nisi tempor reprehenderit officia sint dolore cupidatat nulla minim sint commodo duis dolor sunt veniam proident cillum do labore deserunt.</li>
+                    <li>Incididunt amet tempor esse do exercitation in eiusmod culpa aliquip officia elit in duis consectetur cupidatat tempor aliqua irure anim aute ad ut cillum duis adipisicing aliquip cupidatat dolor non velit.</li>
+                    <li>Sed in magna sit ad id occaecat et amet magna veniam id ex aute et officia dolor in dolore nostrud cupidatat ut dolor ut veniam sit excepteur.</li>
+                    <li>Lorem ipsum irure consectetur aliquip minim duis laborum in tempor ea dolore anim officia nostrud proident ad dolor proident occaecat eu anim aute.</li>
+                    <li>Occaecat do dolore in adipisicing minim in anim labore ut sit sit anim tempor incididunt sunt dolor commodo consectetur culpa incididunt proident ut minim est.</li>
+                    <li>Lorem ipsum reprehenderit velit in amet aliquip magna minim velit ut aliqua dolor deserunt reprehenderit mollit adipisicing mollit dolore adipisicing dolore pariatur consequat in quis exercitation irure eiusmod est.</li>
+                    <li>Labore irure dolor nostrud sit consequat irure consequat ut nisi id occaecat nisi mollit ut laborum in amet pariatur id fugiat culpa et nulla elit do in laborum est dolore cillum commodo occaecat pariatur laborum dolore incididunt.</li>
+                    <li>Lorem ipsum excepteur elit non eiusmod nisi est adipisicing cupidatat in quis anim laboris anim qui ea ut ad enim ea deserunt fugiat occaecat esse et officia cillum consectetur ut tempor velit dolor reprehenderit dolore reprehenderit in velit anim ea.</li>
+                </ol>
+            </div>
+            <div class="bottom">I always have a fixed size of <code>200px</code></div>
+        </div>
     </body>
 </html>
